@@ -13,3 +13,14 @@ window.addEventListener("load", function() {
 // 	console.log("Play Video");
 // });
 
+document.querySelector("#play").addEventListener("click", function() {
+	console.log("Play video");
+	document.querySelector("#volume").innerHTML = video.volume * 100 + '%';
+	video.play();
+});
+
+document.querySelector("#pause").addEventListener("click", function() {
+	console.log("Pause video");
+	video.pause();
+});
+
